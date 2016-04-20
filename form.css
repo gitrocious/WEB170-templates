@@ -1,0 +1,168 @@
+/* reCAPTCHA styles */
+
+form {
+	/* background-color:#42c2bd; */
+	background: -webkit-gradient(linear, bottom, left 400px, from(#7ECBC8), to(#EAF6F6));
+	background: -moz-linear-gradient(bottom, #7ECBC8, #EAF6F6 400px);
+	margin:auto;
+	position:relative;
+	max-width:550px;
+	width:100%;
+	height:550px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #303382;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+label {
+	display:inline-block;
+	margin:15px;
+	line-height:1.5em;
+	/*	padding: 30px; */
+}
+
+input {
+	border: 1px solid #999;
+	height: 25px;
+	width: 90% !important;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight:normal;
+}
+
+textarea {
+	/* max-width:375px; */
+	width:90% !important;
+	height:150px;
+	border: 1px solid #999;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight:normal;
+	padding:3px;
+}
+
+input.submit {
+	width:100px;
+	position:absolute;
+	left:30px;
+	bottom:20px; 
+	background:#EAF6F6;
+	color:#303382;
+	font-family: Verdana, Arial, sans-serif;
+	text-align:center;
+	height:30px;
+	padding:0px 0px 0px 5px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1p solid #999;
+}
+
+input.submit:hover {
+	background:#fff;
+	color:#303382;
+}
+
+/* writes to small text above reCAPTCHA upon failure */
+.dateFeedback{
+	font-style:italic;
+	font-size:70%;
+	font-weight:bold;
+	color:#f00;
+}
+body {
+	min-width:320px; /* reCAPTCHA is 318px */
+	line-height:1.5em;
+}
+/* these 2 rules reposition the reCAPTCHA widget a bit to the left */
+#recaptcha_widget_div{position:relative;}
+#recaptcha_area {
+	position:relative;
+	left:20px;
+	margin-bottom:10px;
+}
+/*PHONE */
+@media screen and (max-width: 500px) {
+
+	form {
+	background: -webkit-gradient(linear, bottom, left 400px, from(#7ECBC8), to(#EAF6F6));
+	background: -moz-linear-gradient(bottom, #7ECBC8, #EAF6F6 400px);
+	margin:auto;
+	position:relative;
+	max-width:490px;
+	width:100%;
+	height:550px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #303382;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+	
+label {
+	display:inline-block;
+/*	margin:10px 5px 10px 5px; */
+	line-height:1.5em;
+	width:90%;
+	max-width:475px;
+	/*	padding: 30px; */
+}
+
+input {
+	border: 1px solid #999;
+	height: 25px;
+/*	margin:15px 5px 15px 5px; */
+	width:90% !important;
+	max-width:475px !important;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight:normal;
+}
+
+textarea {
+	width:90% !important;
+	max-width:475px !important;
+	height:150px;
+	border: 1px solid #999;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-weight:normal;
+	padding:3px;
+}
+
+/* these 2 rules reposition the reCAPTCHA widget a bit to the left */
+#recaptcha_widget_div{position:relative;}
+#recaptcha_area {
+	position:relative;
+	left:2px;
+	margin-bottom:10px;
+}
+
+}
+
