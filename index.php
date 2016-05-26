@@ -30,8 +30,8 @@
 <header>
 
   <!--Begin Main Navigation-->
-  <!--div class="nav-container">
-    <nav id="cssmenu">
+  <div class="nav-container">
+    <!--nav id="cssmenu">
       <ul>
         <li><a href="index.php"><span>Home</span></a></li>
         <li><a href="about.php"><span>About Me</span></a></li>
@@ -39,9 +39,10 @@
         <li><a href="news.php"><span>News</span></a></li>
         <li><a href="contact.php"><span>Contact</span></a></li>
       </ul>
-    </nav>
-  </div-->
+    </nav-->
+
   <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'nav','container_id' => 'cssmenu', ) ); ?>
+    </div>
   <!--End Main Navigation-->
 
 <div id="ribbonh1"></div>
@@ -92,6 +93,7 @@
     </form>
     
     <!--Begin Secondary navigation-->
+    <div id="sub-navigation" class="widget">
     <?php if (is_page()) : // If this is a page ?>
     <h2 class="sub-navigation-title"><?php echo get_the_title($post->post_parent); // Get gateway page title ?></h2>
     <ul class="sub-navigation-items"><?php if ($post->post_parent) { //Check for post parent
@@ -101,6 +103,7 @@
     wp_list_pages(array('child_of' => $post->ID, 'title_li' => __(''))); // List subpages with no title
     } ?></ul>
     <?php endif; ?>
+    </div>
     <!--End Secondary navigation-->
     
     <!--Begin Category Listing-->
