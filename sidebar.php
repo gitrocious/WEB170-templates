@@ -26,6 +26,17 @@
     </div>
     <!--End Secondary navigation-->
     
+    <!--Begin quote-->
+    <?php if (get_post_meta($post->ID, 'Quote', true)) : //is there a quote? ?>
+    <blockquote><?php echo get_post_meta($post->ID, 'Quote', true); //print the quote ?></blockquote>
+    
+    <?php endif; ?>
+     <!--End quote-->
+     
+     <!--Begin dynamic sidebar-->
+     <?php dynamic_sidebar(1); //call widgets ?>
+     <!--End dynamic sidebar-->
+    
     <!--Begin Category Listing-->
     <?php if (!(is_page())) : // If this is not a page ?>
     <h2 class="sub-navigation-title">Topics</h2>

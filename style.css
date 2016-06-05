@@ -98,6 +98,29 @@ p {
 	padding:15px;
 }
 
+blockquote {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	font-style: italic;
+/*	width: 500px; */
+	margin-top: 0.25em;
+	margin-left: 0.5em;
+	padding-left: 30px;
+	line-height: 1.45;
+	position: relative;
+	color: #000000;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -10px; 
+	top: -20px; 
+	color: #7a7a7a;
+}
+
 .sub-navigation-items,
 .sub-navigation-items ul,
 .sub-navigation-items ul li,
