@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+<title><?php get_my_title_tag(); ?></title>
 <meta name="robots" content="noindex,nofollow" />
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400' rel='stylesheet' type='text/css'>
 <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
@@ -16,7 +16,7 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="script.js"></script>
 <!--End Scripts-->
-
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
